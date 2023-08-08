@@ -1,0 +1,10 @@
+RewriteEngine on
+
+
+RewriteRule ^index$ index.php [L,QSA]
+RewriteRule ^etnozabor_deshevle_proflista$ etnozabor_deshevle_proflista.php [L,QSA]
+RewriteRule ^nedostatki_zaborov_iz_dereva$ nedostatki_zaborov_iz_dereva.php [L,QSA]
+RewriteRule ^nedostatki_zabora_is_rovnoy_doski$ nedostatki_zabora_is_rovnoy_doski.php [L,QSA]
+RewriteRule ^nedostatki_zaborov_iz_proflista$ nedostatki_zaborov_iz_proflista.php [L,QSA]
+RewriteRule ^okrashivanie_zabora_raz_v_3_goda$ okrashivanie_zabora_raz_v_3_goda.php [L,QSA]
+RewriteRule ^fotogalerea_etnozabora$ fotogalerea_etnozabora.php [L,QSA]
