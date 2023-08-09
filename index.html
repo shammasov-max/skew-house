@@ -440,8 +440,10 @@
                 var loader = labels[n].querySelector('.loader');
                 var pattern = labels[n].querySelector('img');
             }
-                if (motionBlock) motionBlock.load(e.name, e.getAttribute("prefix") || "", loader, caption, e.getAttribute("folder") || "", e);
-                if (motionBlockMobile) motionBlockMobile.load(e.name, e.getAttribute("prefix") || "", loader, caption, e.getAttribute("folder") || "", e);
+                const prefix = e.getAttribute("prefix") || ""
+                const folder = e.getAttribute("folder") || ""
+                if (motionBlock) motionBlock.load(e.name, prefix, loader, caption, folder, e);
+                if (motionBlockMobile) motionBlockMobile.load(e.name,prefix, loader, caption,folder, e);
     
                 if (mode == "decor" || pattern.src.indexOf("decor") >= 0){
                     document.getElementById("order_decor").src = pattern.src;
